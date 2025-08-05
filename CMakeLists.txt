@@ -9,6 +9,8 @@ endif()
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 
 project(Template VERSION 1.0.0)
+# Local bindings repo
+#set(GEODE_BINDINGS_REPO_PATH $ENV{GEODE_BINDINGS})
 
 # Add all source files inside src (recursively)
 file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS src/*.cpp)
