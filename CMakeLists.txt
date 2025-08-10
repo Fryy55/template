@@ -32,11 +32,13 @@ endif()
 
 add_subdirectory($ENV{GEODE_SDK} ${CMAKE_CURRENT_BINARY_DIR}/geode)
 
-# Set up dependencies, resources, and link Geode.
-setup_geode_mod(${PROJECT_NAME})
-
-# If it fails to download
-#setup_geode_mod(${PROJECT_NAME}
-#    EXTERNALS
-#        geode.node-ids
-#)
+# Set up dependencies, resources, and link Geode
+if (NOT DEFINED GEODE_LOCAL)
+    setup_geode_mod(${PROJECT_NAME})
+else()
+    # My everything fails to download :broken_heart:
+    setup_geode_mod(${PROJECT_NAME}
+        EXTERNALS
+            #geode.node-ids
+    )
+endif()
