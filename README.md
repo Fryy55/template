@@ -4,7 +4,7 @@ This is where she makes a mod.
 <img src="logo.png" width="150" alt="logo!!!" />
 
 # Installation
-1) Download the latest version from [releases](RELEASES URL)
+1) Download the latest version from [releases](/releases)
 2) Install manually via Geode
 
 # Feedback
