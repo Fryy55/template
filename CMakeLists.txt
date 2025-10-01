@@ -37,6 +37,7 @@ if (NOT DEFINED GEODE_LOCAL)
     setup_geode_mod(${PROJECT_NAME})
 else()
     # My everything fails to download :broken_heart:
+    message(NOTICE "GEODE_LOCAL defined. Loading local mod dependencies...")
     setup_geode_mod(${PROJECT_NAME}
         EXTERNALS
             #geode.node-ids
