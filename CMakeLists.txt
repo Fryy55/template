@@ -32,14 +32,9 @@ endif()
 
 add_subdirectory($ENV{GEODE_SDK} ${CMAKE_CURRENT_BINARY_DIR}/geode)
 
+# Add amber
+#CPMAddPackage("gh:Fryy55/amber@1.0.0")
+#target_link_libraries(${PROJECT_NAME} amber)
+
 # Set up dependencies, resources, and link Geode
-if (NOT DEFINED GEODE_LOCAL)
-    setup_geode_mod(${PROJECT_NAME})
-else()
-    # My everything fails to download :broken_heart:
-    message(NOTICE "GEODE_LOCAL defined. Loading local mod dependencies...")
-    setup_geode_mod(${PROJECT_NAME}
-        EXTERNALS
-            #geode.node-ids
-    )
-endif()
+setup_geode_mod(${PROJECT_NAME})
