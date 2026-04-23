@@ -5,4 +5,4 @@ Since this is primarily a C++ project, it requires you to follow a number of sta
 
 In case you can't contribute with code or enhancements, feel free to suggest a feature or report bugs/problems in the Issues tab
 
-Starring or sharing this project with other is also a great way to contribute and it helps prioritize the development of it
+Starring or sharing this project with others is also a great way to contribute and it helps prioritize the development of it
