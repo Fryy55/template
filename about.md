@@ -1,8 +1,7 @@
 # MOD NAME
-
 Description
 
-## Support and feedback
+## Support and Feedback
 You can leave your feedback in the Issues tab or by joining my [Discord server](https://discord.com/invite/4vqtjfdhTk)
 
 ## License
